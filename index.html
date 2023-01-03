@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackuj.fun</title>
+    <script defer src="./app.js"></script>
+    <!--  Yellow => #e3fc02 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+      .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transition: all 1s;
+        transform: translateX(-100%);
+      }
+
+      .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+      }
+
+      body {
+        overflow: hidden;
+        background-color: #1f1f21;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .yellow_div {
+        font-size: 3rem;
+        text-align: center;
+        margin-right: 10px;
+        letter-spacing: 0.1rem;
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+        background: #e3fc02;
+        padding: 2rem;
+        color: #000000;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="yellow_div hidden"><b>PRZERWA TECHNICZNA</b></div>
+  </body>
+</html>
